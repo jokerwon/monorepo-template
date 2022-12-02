@@ -1,5 +1,4 @@
 {
-  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "scripts": {
@@ -8,7 +7,9 @@
     "change": "changeset",
     "change:version": "changeset version",
     "publish": "pnpm build && pnpm publish:only",
-    "publish:only": "changeset publish"
+    "publish:only": "changeset publish",
+    "test": "vitest test",
+    "coverage": "vitest run --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "@types/node": "^18.11.10",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
+    "@vitest/coverage-c8": "^0.25.3",
     "commitlint": "^17.3.0",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
@@ -27,6 +29,7 @@
     "husky": "^8.0.2",
     "prettier": "^2.8.0",
     "tsup": "^6.5.0",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.3",
+    "vitest": "^0.25.3"
   }
 }

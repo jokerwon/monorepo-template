@@ -17,6 +17,21 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "prettier"],
-  "rules": {},
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "useTabs": false,
+        "jsxBracketSameLine": false,
+        "eslintIntegration": false,
+        "bracketSpacing": true,
+        "arrowParens": "avoid"
+      }
+    ]
+  },
   "ignorePatterns": ["**/dist/*"]
 }
