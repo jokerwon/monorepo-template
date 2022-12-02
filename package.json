@@ -5,7 +5,7 @@
     "build": "pnpm -F @jokerwon/* run build",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
     "change": "changeset",
-    "change:version": "changeset version",
+    "change:version": "GITHUB_TOKEN=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 changeset version",
     "publish": "pnpm build && pnpm publish:only",
     "publish:only": "changeset publish",
     "test": "vitest test",
