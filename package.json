@@ -5,12 +5,15 @@
   "scripts": {
     "build": "pnpm -F @jokerwon/* run build",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
-    "changeset": "changeset",
-    "version-packages": "changeset version"
+    "change": "changeset",
+    "change:version": "changeset version",
+    "publish": "pnpm build && pnpm publish:only",
+    "publish:only": "changeset publish"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
