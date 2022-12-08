@@ -2,10 +2,10 @@
   "description": "",
   "keywords": [],
   "scripts": {
-    "build": "pnpm -F @jokerwon/* run build",
+    "build": "tsup",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
     "change": "changeset",
-    "change:version": "GITHUB_TOKEN=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 changeset version",
+    "change:version": "GITHUB_TOKEN=xxx changeset version",
     "release": "pnpm build && pnpm publish:only",
     "release:only": "changeset publish",
     "test": "vitest test",
